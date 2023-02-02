@@ -9,22 +9,44 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 
 bill = 0
 
-if size == "S" or "s":
+if size == "S":
 	bill += 15
-elif size == "M" or "m":
+	print(f"Current bill: ${bill}")
+elif size == "M":
 	bill += 20
-elif size == "L" or "l":
-	bill += 25
+	print(f"Current bill: ${bill}")
 else:
-	print("Invalid selection")
+	bill += 25
+	print(f"Current bill: ${bill}")
 
-if add_pepperoni == "Y" or "y":
-	if size == "S" or "s":
+
+if add_pepperoni == "Y":
+	if size == "S":
 		bill += 2
 	else:
 		bill += 3
+	
 
-if extra_cheese == "Y" or "y":
+if extra_cheese == "Y":
 	bill += 1
+# 
+
+# bill = 0
+
+# if size == "S":
+#   bill += 15
+# elif size == "M":
+#   bill += 20
+# else:
+#   bill += 25
+
+# if add_pepperoni == "Y":
+#   if size == "S":
+#     bill += 2
+#   else:
+#     bill += 3
+    
+# if extra_cheese == "Y":
+#   bill += 1
 
 print(f"Your final bill is: ${bill}")
