@@ -7,28 +7,28 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 
 #Write your code below this line 👇
 
-size = size.upper()
-add_pepperoni = add_pepperoni.upper()
-extra_cheese = extra_cheese.upper()
+# size = size.upper()
+# add_pepperoni = add_pepperoni.upper()
+# extra_cheese = extra_cheese.upper()
 bill = 0
 
-if size == "S":
+if size == "S" or size == "s":
 	bill += 15
 	print(f"Current bill: ${bill}")
-elif size == "M":
+elif size == "M" or size == "m":
 	bill += 20
 	print(f"Current bill: ${bill}")
-elif size == "L":
+elif size == "L" or size == "l":
 	bill += 25
 	print(f"Current bill: ${bill}")
 
-if add_pepperoni == "Y":
-	if size == "S":
+if add_pepperoni == "Y" or add_pepperoni == "y":
+	if size == "S" or size == "s":
 		bill += 2
 	else:
 		bill += 3
 
-if extra_cheese == "Y":
+if extra_cheese == "Y" or extra_cheese == "y":
 	bill += 1
 
 print(f"Your final bill is: ${bill}")
