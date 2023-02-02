@@ -7,3 +7,19 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 
 #Write your code below this line 👇
 
+bill = 0
+
+if size == "S" or "s":
+	bill += 15
+elif size == "M" or "m":
+	bill += 20
+elif size == "L" or "l":
+	bill += 25
+else:
+	print("Invalid selection")
+
+if add_pepperoni == "Y" or "y":
+	if size == "S" or "s":
+		bill += 2
+	
+	
